@@ -1,0 +1,163 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #141218;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'Roboto';
+  /* height: 100vh; */
+
+}
+.content{
+
+  background: url("../img/background.jpg") no-repeat top right;
+  background-size: contain;
+}
+.header{
+  padding-top: 60px;
+}
+.container{
+  max-width: 1195px;
+  padding: 0 30px;
+  margin: 0 auto;
+  
+}
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__link{
+  color: #fff;
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+.menu{
+  margin-right: auto;
+  margin-left: 68px;
+}
+.menu__ul li, .media__ul li{
+  display: inline-block;
+}
+.media__ul li + li{
+  margin-left: 21px;
+}
+.menu__ul li + li{
+  margin-left: 24px;
+}
+
+.main{
+  margin-top: 90px;
+}
+
+.main__rating{
+  display: inline-block;
+  position: relative;
+}
+
+.main__rating-stars{
+  margin-top: 16px;
+  display: inline-block;
+}
+.main__rating-stars li{
+  display: inline;
+}
+.main__mark{
+  font-size: 12px;
+  line-height: 14px;
+  display: inline-block;
+  padding: 0;
+  position: absolute;
+  bottom:2.3px;
+  margin-left: 8.59px;
+}
+.main__title{
+  margin-top: 10px;
+  font-family: Mason Chronicles;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 76px;
+  line-height: 89px;
+}
+.main__decr{
+  margin-top: 10px;
+  line-height: 150%;
+  max-width: 458px;
+  width:100%;
+  display: block;
+}
+.main__watch{
+  color: #fff;
+  text-decoration: none;
+  background-color:#9D2929;
+  padding: 22px 72px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: 500;
+
+}
+.main__series{
+  margin-top: 85px;
+}
+.footer{
+  margin-top: 99px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+
+}
+.footer__left{
+  line-height: 20px;
+  opacity: 0.4;
+}
+.footer__right{
+  line-height: 20px;
+  opacity: 0.4;
+}
+.footer__right-link{
+  color:#fff;
+  text-decoration: none;
+}
+.footer__right-link + .footer__right-link{
+  margin-left: 25px;
+}
+.play{
+  background-color: #9D2929;
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  border:none;
+  position: relative;
+  margin:auto;
+  outline: none;
+}
+.play:before{
+  content: '';
+  width: 132px;
+  height: 132px;
+  background-color:#9D2929;
+  opacity: 0.5;
+  position: absolute;
+  border-radius:50%;
+  left:-16px;
+  top:-16px;
+}
+.play-img{
+  position: relative;
+  transform: translateX(5px);
+}
+.main-inner{
+  display: flex;
+  align-items:center;
+}
+@font-face{
+  font-family: 'Mason Chronicles';
+  src:url("../fonts/4026.ttf") format("truetype");
+}
