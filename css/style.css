@@ -8,6 +8,9 @@ body{
   line-height: 16px;
   font-family: 'Roboto';
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
 }
 .content{
@@ -140,6 +143,7 @@ ul{
 .series{
   display: flex;
   align-items: center;
+  margin-bottom: 60px;
 }
 .card{
   width: 164px;
@@ -183,7 +187,7 @@ ul{
   background-color: transparent;
 }
 footer{
-  margin-top:100px;
+  margin-top:auto;
   border:1px solid red;
 }
 .footer{
