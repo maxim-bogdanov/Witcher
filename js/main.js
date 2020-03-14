@@ -1,17 +1,20 @@
-$(function(){
-  $('.slider').slick({
-    arrows: false,
-    fade: true,
-    autoplay: 3000,
-    dots:true
-  });
+var mySwiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  loop:true,
+  navigation: {
+    nextEl: '.arrow'
+  },
+  breakpoints: {
+    540: {
+      slidesPerView: 2,
 
-$('.header-btn').on('click', function(){
-  $('.menu').addClass('active');
+    }
+  }
 });
 
-$('.close-btn').on('click',function(){
-  $('.menu').removeClass('active');
-});
-
-});
+var menuButton = document.querySelector('.menu-button');
+var menu = document.querySelector('.header-inner');
+  menuButton.addEventListener('click',function(){
+    menuButton.classList.toggle('menu-button-active');
+    menu.classList.toggle('header-active');
+  })

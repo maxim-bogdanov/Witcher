@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500%7CRoboto+Condensed:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Witcher</title>
 </head>
 
@@ -33,6 +34,7 @@
             </ul>
           </div>
         </div>
+        <div class="menu-button"></div>
       </div>
     </header>
     <div class="main">
@@ -55,7 +57,7 @@
                 <li><img src="img/Vector.svg" alt=""></li>
                 <li><img src="img/Vector.svg" alt=""></li>
               </ul>
-              <span class="main__mark">7/10</span>
+              <div class="main__mark">7/10</div>
             </div>
             <div class="main__title">Ведьмак</div>
             <div class="main__decr">
@@ -68,21 +70,34 @@
           <button class="play">
             <img src="img/Vector-2.svg" alt="play" class="play-img">
           </button>
-        <!-- <div class="main__series">asdfasdf</div> -->
         </div>
+
         <div class="series">
-          <div class="card series-1">
-            <span class="card-subtitle">Серия #1</span>
-            <h2 class="card-title">Начало конца</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">          
+                  <div class="card series-1">
+                    <span class="card-subtitle">Серия #1</span>
+                    <h2 class="card-title">Начало конца</h2>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card series-2">
+                    <span class="card-subtitle">Серия #2</span>
+                    <h2 class="card-title">Четыре знака</h2>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card series-2">
+                    <span class="card-subtitle">Серия #3</span>
+                    <h2 class="card-title">Четыре знака</h2>
+                  </div>
+                </div>
+            </div>
           </div>
-          <div class="card series-2">
-            <span class="card-subtitle">Серия #2</span>
-            <h2 class="card-title">Четыре знака</h2>
-          </div>
-          <div class="navigation">
-            <button class="arrow"></button>
-          </div>
+          <button class="arrow"></button>
         </div>
+ 
       </div>
     </div>
   </div>
@@ -100,6 +115,8 @@
       </div>
     </div>
   </footer>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
