@@ -106,7 +106,7 @@ ul{
   display: block;
   animation-delay: 0.7s;
 }
-.main__watch{
+.main__watch-button{
   color: #fff;
   text-decoration: none;
   background-color:#9D2929;
@@ -118,11 +118,14 @@ ul{
   font-style: normal;
   font-weight: 500;
   text-align: center;
+}
+.main__watch{
   animation-delay: 1s;
 }
-.main__series{
+
+/* .series{
   margin-top: 85px;
-}
+} */
 
 .play{
   background-color: #9D2929;
@@ -157,6 +160,7 @@ ul{
 .main-inner{
   display: flex;
   align-items:center;
+  /* justify-content: flex-start; */
   margin-bottom: 85px;
 }
 /* slider */
