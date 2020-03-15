@@ -248,7 +248,7 @@ footer{
   margin-left: 25px;
 }
 /* Responsive */
-.menu-button{
+.menu-button,.menu-button-wrap{
   display: none;
 }
 button:hover{
@@ -271,10 +271,18 @@ button:hover{
 }
 
 @media(max-width:540px){
+  .menu-button-wrap{
+    display: block;
+    width:30px;
+    height:24px;
+    position: absolute;
+    top: 36px;
+    right:30px;
+    z-index: 10;
+  }
   .menu-button{
     position: absolute;
-    right: 35px;
-    top: 40px;
+    top:11px;
     width: 30px;
     height: 2px;
     background-color: #fff;

@@ -12,9 +12,10 @@ var mySwiper = new Swiper('.swiper-container', {
 
 });
 
-var menuButton = document.querySelector('.menu-button');
+var menuButton = document.querySelector('.menu-button-wrap');
+var menuButton1 = document.querySelector('.menu-button');
 var menu = document.querySelector('.header-inner');
   menuButton.addEventListener('click',function(){
-    menuButton.classList.toggle('menu-button-active');
+    menuButton1.classList.toggle('menu-button-active');
     menu.classList.toggle('header-active');
   })
