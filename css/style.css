@@ -57,14 +57,19 @@ ul{
 .menu__ul li + li{
   margin-left: 24px;
 }
-
+.main__year{
+  animation-delay: 0.1s;
+}
 .main{
   margin-top: 90px;
 }
 
 .main__rating{
-  display: inline-block;
+  display: flex;
   position: relative;
+  justify-content: flex-start;
+  align-items:center;
+  animation-delay: 0.3s;
 }
 
 .main__rating-stars{
@@ -80,6 +85,7 @@ ul{
   display: inline-block;
   padding: 0;
   position: absolute;
+  left:150px;
   bottom:2.3px;
   margin-left: 8.59px;
 }
@@ -90,6 +96,7 @@ ul{
   font-weight: 500;
   font-size: 76px;
   line-height: 89px;
+  animation-delay: 0.5s;
 }
 .main__decr{
   margin-top: 10px;
@@ -97,18 +104,21 @@ ul{
   max-width: 458px;
   width:100%;
   display: block;
+  animation-delay: 0.7s;
 }
 .main__watch{
   color: #fff;
   text-decoration: none;
   background-color:#9D2929;
-  padding: 22px 72px;
+  padding: 22px 62px;
   border-radius: 8px;
   display: inline-block;
+  max-width: 260px;
   margin-top: 40px;
   font-style: normal;
   font-weight: 500;
-
+  text-align: center;
+  animation-delay: 1s;
 }
 .main__series{
   margin-top: 85px;
@@ -124,6 +134,7 @@ ul{
   margin:auto;
   outline: none;
   flex-shrink: 0;
+
 }
 .play:before{
   content: '';
@@ -135,9 +146,12 @@ ul{
   border-radius:50%;
   left:-16px;
   top:-16px;
+  animation: pulse 0.5s ease-in-out 2s infinite;
 }
 .play-img{
-  position: relative;
+  position: absolute;
+  left:30%;
+  top:30%;
   transform: translateX(5px);
 }
 .main-inner{
@@ -232,6 +246,9 @@ footer{
 /* Responsive */
 .menu-button{
   display: none;
+}
+button:hover{
+  cursor: pointer;
 }
 
 @media(max-width: 760px){
