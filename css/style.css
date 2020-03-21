@@ -344,7 +344,7 @@ button:hover{
     display:none;
   }
   .header-active{
-    display:flex;
+    display:flex; 
   }
   .menu{
     margin-right: 0;
